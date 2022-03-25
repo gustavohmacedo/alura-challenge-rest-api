@@ -13,7 +13,7 @@ public class VideoForm {
 
     @NotNull
     @NotEmpty(message = "Title cannot be blank")
-    @Length(min = 5, max = 25)
+    @Length(min = 5, max = 40)
     private String title;
 
     @NotNull

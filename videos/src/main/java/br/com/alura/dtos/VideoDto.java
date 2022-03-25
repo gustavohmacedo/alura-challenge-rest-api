@@ -17,14 +17,11 @@ public class VideoDto {
 
     public VideoDto(Video video) {
 
-        this.idVideo = getIdVideo();
+        this.idVideo = video.getIdVideo();
         this.title = video.getTitle();
         this.description = video.getDescription();
         this.url = video.getUrl();
 
     }
-
-
-
 
 }
