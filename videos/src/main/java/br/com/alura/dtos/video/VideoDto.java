@@ -1,4 +1,4 @@
-package br.com.alura.dtos;
+package br.com.alura.dtos.video;
 
 import br.com.alura.models.Video;
 import lombok.Getter;
@@ -7,7 +7,9 @@ import lombok.Getter;
 @Getter
 public class VideoDto {
 
-    private long idVideo;
+    private long videoId;
+
+    private long categoryId;
 
     private String title;
 
@@ -17,7 +19,8 @@ public class VideoDto {
 
     public VideoDto(Video video) {
 
-        this.idVideo = video.getIdVideo();
+        this.videoId = video.getVideoId();
+        this.categoryId = video.getCategoryId();
         this.title = video.getTitle();
         this.description = video.getDescription();
         this.url = video.getUrl();

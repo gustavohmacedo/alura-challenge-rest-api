@@ -1,4 +1,4 @@
-package br.com.alura.dtos;
+package br.com.alura.dtos.video;
 
 
 import br.com.alura.models.Video;
@@ -28,7 +28,7 @@ public class VideoForm {
 
     public Video convertToEntity() {
 
-        return new Video(title, description, url);
+        return new Video(this.title, this.description, this.url);
 
     }
 

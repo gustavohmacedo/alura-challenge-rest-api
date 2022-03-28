@@ -1,7 +1,7 @@
 package br.com.alura.controllers;
 
-import br.com.alura.dtos.VideoDto;
-import br.com.alura.dtos.VideoForm;
+import br.com.alura.dtos.video.VideoDto;
+import br.com.alura.dtos.video.VideoForm;
 import br.com.alura.models.Video;
 import br.com.alura.services.VideoService;
 import lombok.AllArgsConstructor;

@@ -2,18 +2,18 @@ package br.com.alura.services;
 
 import br.com.alura.models.Video;
 import br.com.alura.repositories.VideoRepository;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
-@AllArgsConstructor
 @Service
 public class VideoService {
 
-    private final VideoRepository videoRepository;
+    @Autowired
+    private VideoRepository videoRepository;
 
     public Video save(Video video) {
 
@@ -41,7 +41,7 @@ public class VideoService {
 
         Video originalVideo = this.findById(id);
 
-        video.setIdVideo(originalVideo.getIdVideo());
+        video.setVideoId(originalVideo.getVideoId());
 
         return videoRepository.save(video);
     }
